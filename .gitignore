@@ -13,12 +13,11 @@
 !/log/.keep
 !/tmp/.keep
 
-# Ignore uploaded files in development.
-/storage/*
-!/storage/.keep
-
-/public/assets
+# Ignore Byebug command history file.
 .byebug_history
+
+# I don't want to show my secrets
+/config/secrets.yml
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
