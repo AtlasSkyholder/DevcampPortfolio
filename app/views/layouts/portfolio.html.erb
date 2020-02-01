@@ -10,10 +10,19 @@
 
     <%= stylesheet_link_tag 'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <script type='text/javascript'>
+      $('#mydiv').show();
+    </script>
   </head>
 
   <body>
     <%= render 'shared/portfolio_nav' %>
+
+    <div id='mydiv' style='display:none'>
+      TEST
+    </div>
+
     <%= render 'shared/portfolio_masthead' unless logged_in?("site_admin") %>
 
     <%= yield %>
