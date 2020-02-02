@@ -14,6 +14,7 @@ require("channels")
 require('jquery')
 require('jquery-ui')
 require("packs/html.sortable")
+// require("dotenv-rails")
 
 $(function(){
   $('.sortable').sortable();
